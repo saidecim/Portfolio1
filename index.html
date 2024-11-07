@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ▼ Name and Icon ▼-->
+  <title>Engr. Cyrus Victorio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="extra/tech_elec.ico" sizes="any">
+  <script defer src="app.js">
+  </script>
+<script src="https://kit.fontawesome.com/d6527b4ee0.js" crossorigin="anonymous"></script>
+</head>
+  <!-- ▼ Body ▼-->
+<body>
+  <audio id="song">
+    <source src="extra/EDSA.mp3">
+  </audio>
+  <script>
+    window.addEventListener('click', () => {
+      document.getElementById("song").play();
+      song.volume = 0.005;
+    });
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+<div id="preloaderdown">
+  <div id="loadtext">
+    <h2>NOW LOADING...</h2>
+  </div>
+  <div id="preloaderup">
+
+  </div>
+</div>
+    <!-- -------▼ HEADER! -------- ▼-->
+<div id = 'header'>
+    
+  <div class= "container">
+    <nav>
+      <img src="extra/logo 1.png" class="logo">
+      <ul>
+        <li><a href="#header" class="slideinright">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-times" onclick="openmenu()"></i>
+    </nav>
+  <div class="header-text hidden slideinright">
+    <p> Electronics Engineer and Technician</p>
+    <h1>Hi! I'm <span>Cyrus</span> Victorio</h1>
+    <div class="social-icons">
+      <a href="https://github.com/saidecim" target='_blank' class="thisiscon hidden"><i class="fa-brands fa-github"></i></a>
+      <a href="#contact" class="thisiscon hidden"><i class="fa-brands fa-google"></i></a>
+      <a href="https://www.instagram.com/cyrusvictorio/" target='_blank'class="thisiscon hidden"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/cyrusmvictorio/" target='_blank' class="thisiscon hidden"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- -------▼ ABOUT! -------- ▼-->
+<div id="about">
+  <div class="container">
+    <div class='row'>
+      <div class = 'about-col-1'>
+          <img src="extra/cyrusfront.png">
+      </div>
+      <div class = 'about-col-2'>
+        <h1 class="sub-title hidden"> About Me </h1>
+        <p class="hidden">A Licensed Electronics Engineer and Technician with hands-on experience in project management, office operations, and using engineering tools 
+          like AutoCAD and Sketchup. Skilled in implementing technical solutions, circuit analysis, and troubleshooting, with knowledge in HTML, CSS,C, PHP, and Python. 
+          Committed to continuous learning and eager to contribute effectively to organizational success. </p>
+
+          <div class="tab-titles hidden">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+            <p class="tab-links"  onclick="opentab('education')">Education</p>
+          </div>
+          <div class ='tab-contents active-tab hidden' id="skills">
+            <ul>
+              <li><span> Programming </span><br></li>
+              <li><span> Technical </span><br></li>
+              <li><span> Soft skill </span><br></li>
+            </ul>
+          </div>
+          <div class =' tab-contents ' id="experience">
+            <ul>
+              <li><span>Assistant Team Leader Intern </span><br> E-Link Solution Corporation</li>
+              <li><span> Student Assistant </span><br>Polytechnic University of the Philippines</li>
+            </ul>
+          </div>
+          <div class =' tab-contents' id="education">
+            <ul>
+              <li><span>Bacherlor of Science in Electronics Engineering </span><br>Polytechnic University of the Philippines</li>
+              <li><span>High School </span><br>Polytechnic University of the Philippines</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -------▼ SCRIPT FOR HIDING THE LIST -------- ▼-->
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName('tab-contents');
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove('active-link');
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove('active-tab');
+    }
+    event.currentTarget.classList.add('active-link');
+    document.getElementById(tabname).classList.add('active-tab');
+  }
+</script>
+
+
+<!-- -------▼ Portfolio -------- ▼-->
+<div id="portfolio">
+  <div class="container">
+
+    <h1 class="sub-title hidden">My Projects</h1>
+    <div class="work-list">
+      <div class="work hidden">
+          <img src="extra/commute1 (1).png">
+        <div class="layer">
+          <h3>Ride Hailing App</h3>
+          <p>iCommute: A Tricycle Real-Time Tracking and Crowd Sensing Application in Managing Commuters.</p>
+          <a href="https://drive.google.com/drive/folders/1jVbFVrXUvyLheHNL1m5htaYguCFe_OJp?usp=sharing" target='_blank' class="fas fa-external-link-alt"></a>
+        </div>
+      </div>
+      <div class="work hidden">
+        <img src="extra/robo.jpg" height="450px">
+        <div class="layer">
+          <h3>Robotic Arm</h3>
+          <p>AQUAGRASP: DESIGN AND IMPLEMENTATION OF ROBOTIC ARM FOR SEAMLESS WATER DISPENSING</p>
+          <a href="https://drive.google.com/drive/folders/1t2mzZ5nNg8XPkV9CEYaQCo0LSRRwxL7V?usp=sharing" target='_blank' class="fas fa-external-link-alt"></a>
+        </div>
+      </div>
+
+      <div class="work hidden">
+        <img src="extra/wave.jpg" >
+        <div class="layer">
+          <h3>Music</h3>
+          <p>Making Music</p>
+          <a href="" target="_blank" class="fas fa-external-link-alt"></a>
+        </div>
+      </div>
+      
+    </div>
+
+    <a href="#" class=" btn">Work In Progress</a>
+  </div>
+</div>
+<!-- -------▼ Contact me  -------- ▼-->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p>victoriocyrus@gmail.com</p>
+        <div class="social-icons">
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/cyrusmvictorio/" target='_blank'><i class="fab fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-google"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- -------▼ Status -------- ▼-->
+<div class="news-container">
+  <div class="newstitle">
+      Status:
+  </div>
+  <ul>
+      <li>
+          Work in Progress. ||  Now Playing - EDSA  By Mikey Amistoso, Diego Mapa, & Jazz Nicolas || Update Soon... ||
+          Work in Progress. ||  Now Playing - EDSA  By Mikey Amistoso, Diego Mapa, & Jazz Nicolas || Update Soon... ||
+          Work in Progress. ||  Now Playing - EDSA  By Mikey Amistoso, Diego Mapa, & Jazz Nicolas || Update Soon... ||
+          Work in Progress. ||  Now Playing - EDSA  By Mikey Amistoso, Diego Mapa, & Jazz Nicolas || Update Soon... ||
+      </li>
+  </ul>
+</div>
+</body>
+</html>
